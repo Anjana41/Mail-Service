@@ -1,0 +1,33 @@
+
+
+
+.card{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* // grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem)); */
+   width: 18rem;
+  /* // gap: 2rem; */
+  justify-content: center;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+  border-inline: inherit;
+}
+
+/* .card-style {
+  overflow: hidden;
+  box-shadow: 0 2px 20px $clr-gray300;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+
+} */
+  
