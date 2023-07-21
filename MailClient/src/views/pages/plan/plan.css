@@ -1,0 +1,79 @@
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  /* height: 200px; */
+  max-height: 35vh;
+  -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  margin: 20px;
+}
+
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid > div {
+  flex-basis: calc(40% - 40px);
+}
+
+.boxy {
+  width: 200px;
+  background: green;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.boxy:hover {
+  animation: boxyRotation 4s infinite linear;
+}
+
+@keyframes boxyRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.black-background {
+  background-color: red !important;
+  font-size: 5vh;
+  border-radius: 10px 10px 10px 10px;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    color: var(--cui-card-color, unset);
+    text-align: center;
+}
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    color: var(--cui-card-cap-color, unset);
+    background-color: var(--cui-card-cap-bg, rgba(0, 0, 21, 0.03));
+    border-bottom: 1px solid var(--cui-card-border-color, rgba(0, 0, 21, 0.125));
+    text-align: center;
+
+}
+.card{
+  position: relative;
+  left: 11rem;
+}
